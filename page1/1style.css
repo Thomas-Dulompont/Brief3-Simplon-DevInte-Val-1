@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Abril Fatface', sans-serif;    
+    font-size: 44px;
+    color:#CE526E ;
+    text-transform: uppercase;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    padding: 15px 25px;
+}
+
+.navbar li>a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar li>a:hover {
+    color: rgb(0, 11, 165);
+}
+body{
+    width: 80%; 
+    padding-bottom: 200px; 
+    margin: auto;
+    max-width: 1100px;
+}
+
+.bighead {                                             /*header*/
+    display: grid;
+    width: 100%; 
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr; 
+    justify-content: center;
+   
+}                                                 /*header*/
+.illu {                                          /*photo dans header*/
+    Width : 100%;
+    Height: 360px;      
+}                                                  /*photo dans header*/
+header div {                                    /*header photos div*/
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    
+  }                                             /*header photos div*/
+.headh2 {                                            /*text h2 dans header*/
+    grid-column: 1;
+   
+}                                                     /*text h2 dans header*/
+.bighead > p {                                       /*text dans header*/
+    grid-column: 1;
+}
+                                                 
+.logo {                                          
+    max-width: 100%;
+    max-height: auto;
+    padding-right: -40px;
+    margin-left: -40px;
+}                                                 
+
+
+
+
+                                                      /*liste de navbar*/
+.buttonsicons {   
+    display: flex;                                  /*icons de resaux */
+    list-style-type: none;
+    text-transform: capitalize; 
+    gap: 20px; 
+    padding: 15px 0px;
+    font-size: 20px;
+    width: 100%; 
+    justify-content: start;  
+}
+.buttonsicons a {
+    gap: 20px;
+    display: flex;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white; }
+.fa-linkedin {
+    background: #007bb5;
+    color: white; }
+.fa-medium {
+        background: #000000;
+        color: white;
+}
+.fab {
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+h2 {
+
+    font-size: 42px;
+    line-height: 0.8;
+     
+}
+.headselection{
+    padding-right: 15%;
+}
+.blocks {                                            /*les articles*/
+    display: grid;
+    padding-top: 90px;
+    grid-template-columns: 1fr 1fr;
+     
+    width: 100%;
+    gap: 40px;   
+    margin: 0 auto;
+}
+.box  {
+    
+    width: 100%;
+    
+}
+
+ .vibePhoto img{                                        /*photo de articles*/
+  width:100% ;
+    height:auto ;
+}
+
+.savoirplus {                                       /*sa voir plus dans les articles*/
+   color: #CE526E;
+   font-weight: bold;  
+   line-height: 2;
+   font-size: 22px;
+}
+.block-title {                                      /*titre de articles*/
+    color: #CE526E;
+    font-size: 35px;
+    line-height: 0.5;
+  }
+.block-date {
+    font-weight: 600;
+}
