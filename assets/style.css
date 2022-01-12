@@ -6,6 +6,22 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a:hover {
+    opacity: 0.8;
+}
+
+body{
+    width: 80%; 
+    padding-bottom: 200px; 
+    margin: auto;
+    max-width: 1100px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 h1 {
     font-family: 'Abril Fatface', sans-serif;    
     font-size: 44px;
@@ -20,7 +36,8 @@ h2,h3 {
 }
 
 nav {
-    margin: 0 auto;
+    margin: 25px auto;
+    padding-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +49,7 @@ nav {
 }
 
 .navbar li {
-    padding: 15px 25px;
+    padding: 15px 0px 15px 50px;
 }
 
 .navbar li>a {
@@ -43,12 +60,6 @@ nav {
 
 .navbar li>a:hover {
     color: rgb(0, 11, 165);
-}
-body{
-    width: 80%; 
-    padding-bottom: 200px; 
-    margin: auto;
-    max-width: 1100px;
 }
 
 .bighead {                                            
@@ -79,18 +90,16 @@ header div {                                    /*header photos div*/
     grid-column: 1;
 }
                                                  
-.logo {                                          
-    max-width: 100%;
-    max-height: auto;
-    padding-right: -40px;
-    margin-left: -40px;
+.logo img{                                          
+    width: 100%;
+    height: auto;
+    max-width: 120px;
 }                                                 
 .buttonsicons {   
     display: flex;                                  /*icons de resaux */
     list-style-type: none;
     text-transform: uppercase; 
     gap: 20px; 
-    padding: 15px 15px;
     font-size: 20px;
     width: 100%; 
     justify-content: start;  
@@ -98,21 +107,35 @@ header div {                                    /*header photos div*/
 .buttonsicons a {
     gap: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 2px;
 }
-.fa-twitter {
+
+.deux a {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 5px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.buttonsicons a:hover {
+    opacity: 0.8;
+}
+.twitter {
     background: #55ACEE;
     color: white; }
-.fa-linkedin {
+.linkedin {
     background: #007bb5;
     color: white; }
-.fa-medium {
+.medium {
         background: #000000;
         color: white;
-}
-.fab {
-    padding: 20px;
-    text-decoration: none;
-    border-radius: 5px;
 }
 
 .headselection{
@@ -174,7 +197,7 @@ header div {                                    /*header photos div*/
 
 .corps {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 50% 50% ;
     width: 100%;
     gap: 5%;   
     margin: 0 auto;
@@ -272,4 +295,18 @@ nav a:hover {
 .article-img img{
     width: 100%;
     height: auto ;
+}
+
+
+
+/* A PROPOS */
+
+.container-a-propos {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+}
+
+.container-a-propos h2 {
+    text-align: center;
 }
