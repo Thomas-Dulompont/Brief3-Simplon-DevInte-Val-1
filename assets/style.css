@@ -79,7 +79,13 @@ header div {                                    /*header photos div*/
     grid-row-start: 1;
     grid-row-end: 6;
     
-  }                                             /*header photos div*/
+}
+footer div {                                    /*header photos div*/
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    
+}                                            /*header photos div*/
 .headh2 {                                            /*text h2 dans header*/
     grid-column: 1;
     color: grey;
@@ -282,7 +288,6 @@ input[type=tel] {
 li {
     font-family: 'Montserrat', sans-serif;
     color: black;
-    size: 15px;
 }
 #objett {
     padding-bottom: 40px;
